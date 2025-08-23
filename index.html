@@ -17,9 +17,13 @@
     <div class="container">
       <!-- سایدبار -->
       <aside class="sidebar">
-        <img src="profile.jpg" alt="پروفایل" class="profile-pic" />
-        <h2>سروش تقی آبادی</h2>
-        <h3>Soroosh Taqiabadi</h3>
+        <div class="header-wrapper">
+          <img src="profile.jpg" alt="پروفایل" class="profile-pic" />
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 0;">
+            <h2>سروش تقی آبادی</h2>
+            <h3>Soroosh Taqiabadi</h3>
+          </div>
+        </div>
         <nav>
           <ul>
             <li onclick="showSection('intro')" class="sidebar-item active">
@@ -190,6 +194,13 @@
     color: white;
     padding: 20px;
     text-align: center;
+  }
+
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .profile-pic {
@@ -369,9 +380,17 @@
       height: 100%;
       overflow-x: hidden;
     }
+
+    .header-wrapper {
+      flex-direction: row !important;
+      align-items: end !important;
+      margin-right: 10px !important;
+    }
+
     .profile-pic {
-      width: 120px;
-      height: 120px;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 0 !important;
     }
 
     .container {
@@ -391,6 +410,7 @@
     .sidebar {
       width: auto !important;
       max-width: 100% !important;
+      padding: 15px 10px 0 10px !important;
     }
 
     .projects {
@@ -406,7 +426,7 @@
       overflow-x: auto;
       white-space: nowrap;
       gap: 10px;
-      padding: 0 10px 10px 10px;
+      padding: 0 10px 0px 10px;
       scrollbar-width: none;
       scroll-behavior: smooth;
     }
@@ -419,7 +439,8 @@
       min-width: 120px;
       flex: 0 0 auto;
       text-align: center;
-      flex-direction: column;
+      flex-direction: row;
+      gap: 5px !important;
     }
 
     .sidebar li .label {
