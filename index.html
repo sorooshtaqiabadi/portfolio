@@ -69,6 +69,7 @@
         <section id="portfolio" class="section">
           <h1>نمونه‌کارها</h1>
           <p>در اینجا برخی از پروژه‌هایی که انجام دادم را معرفی می‌کنم.</p>
+          <p style="margin-top: -10px;">برای مشاهده توضیحات و تصاویر هر پروژه، روی دکمه اطلاعات بیشتر ضربه بزنید.</p>
           <!-- بخش Vue -->
           <div class="category">
             <h2 style="color: gray">Vue.js Projects</h2>
@@ -87,18 +88,22 @@
               <div class="project" onclick="openModal('vue1')">
                 <img src="images/danish/vue1-1.webp" />
                 <p>اپ و وب اپ فروشگاهی دانش (Danish)</p>
+                <button style="cursor: pointer; position: absolute; bottom: 0; left: 50%; color: white; background-color: blue; border: 0; border-radius: 10px; transform: translateX(-50%) translateY(50%); padding: 5px 10px;">اطلاعات بیشتر</button>
               </div>
               <div class="project" onclick="openModal('vue2')">
                 <img src="images/ex/vue1-3.webp" />
                 <p>پلتفرم اعلام قیمت و معرفی مواد پلیمری اکسپلیمر</p>
+                <button style="cursor: pointer; position: absolute; bottom: 0; left: 50%; color: white; background-color: blue; border: 0; border-radius: 10px; transform: translateX(-50%) translateY(50%); padding: 5px 10px;">اطلاعات بیشتر</button>
               </div>
               <div class="project" onclick="openModal('vue3')">
                 <img src="images/sm/vue1-2.webp" />
                 <p>سامانه مودیان مالیاتی سیناپردازش</p>
+                <button style="cursor: pointer; position: absolute; bottom: 0; left: 50%; color: white; background-color: blue; border: 0; border-radius: 10px; transform: translateX(-50%) translateY(50%); padding: 5px 10px;">اطلاعات بیشتر</button>
               </div>
               <div class="project" onclick="openModal('vue4')">
                 <img src="images/matab/vue1-4.webp" />
                 <p>نرم افزار تحت وب و آنلاین مطب سینا</p>
+                <button style="cursor: pointer; position: absolute; bottom: 0; left: 50%; color: white; background-color: blue; border: 0; border-radius: 10px; transform: translateX(-50%) translateY(50%); padding: 5px 10px;">اطلاعات بیشتر</button>
               </div>
             </div>
           </div>
@@ -121,26 +126,32 @@
               <div class="project" onclick="openModal('wp1')">
                 <img src="images/payavaran/wp1.webp" />
                 <p>وب سایت فروشگاهی پایاوران</p>
+                <button style="cursor: pointer; position: absolute; bottom: 0; left: 50%; color: white; background-color: blue; border: 0; border-radius: 10px; transform: translateX(-50%) translateY(50%); padding: 5px 10px;">اطلاعات بیشتر</button>
               </div>
               <div class="project" onclick="openModal('wp2')">
                 <img src="images/tetras/wp1.webp" />
                 <p>وب سایت فروشگاهی تتراس</p>
+                <button style="cursor: pointer; position: absolute; bottom: 0; left: 50%; color: white; background-color: blue; border: 0; border-radius: 10px; transform: translateX(-50%) translateY(50%); padding: 5px 10px;">اطلاعات بیشتر</button>
               </div>
               <div class="project" onclick="openModal('wp3')">
                 <img src="images/sina/wp1.webp" />
                 <p>وب سایت فروشگاهی سیناپردازش</p>
+                <button style="cursor: pointer; position: absolute; bottom: 0; left: 50%; color: white; background-color: blue; border: 0; border-radius: 10px; transform: translateX(-50%) translateY(50%); padding: 5px 10px;">اطلاعات بیشتر</button>
               </div>
               <div class="project" onclick="openModal('wp4')">
                 <img src="images/pishro/wp1.webp" />
                 <p>وب سایت فروشگاهی پیشروپک</p>
+                <button style="cursor: pointer; position: absolute; bottom: 0; left: 50%; color: white; background-color: blue; border: 0; border-radius: 10px; transform: translateX(-50%) translateY(50%); padding: 5px 10px;">اطلاعات بیشتر</button>
               </div>
               <div class="project" onclick="openModal('wp5')">
                 <img src="images/kh/wp1.webp" />
                 <p>وب سایت خدماتی کهن سوله</p>
+                <button style="cursor: pointer; position: absolute; bottom: 0; left: 50%; color: white; background-color: blue; border: 0; border-radius: 10px; transform: translateX(-50%) translateY(50%); padding: 5px 10px;">اطلاعات بیشتر</button>
               </div>
               <div class="project" onclick="openModal('wp6')">
                 <img src="images/at/wp1.webp" />
                 <p>وب سایت خدماتی انجمن طلا</p>
+                <button style="cursor: pointer; position: absolute; bottom: 0; left: 50%; color: white; background-color: blue; border: 0; border-radius: 10px; transform: translateX(-50%) translateY(50%); padding: 5px 10px;">اطلاعات بیشتر</button>
               </div>
             </div>
           </div>
@@ -310,16 +321,20 @@
     cursor: pointer;
     text-align: center;
     flex: 1;
+    position: relative;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    padding-bottom: 10px;
   }
 
   .project img {
-    width: 100%;
+    width: calc(100% - 10px);
     border-radius: 8px;
-    transition: transform 0.3s;
   }
 
-  .project:hover img {
-    transform: scale(1.05);
+  .project:hover  {
+    transform: scale(0.95);
   }
 
   .modal {
