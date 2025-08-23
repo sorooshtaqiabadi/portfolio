@@ -1,0 +1,37 @@
+/* فونت معمولی */
+@font-face {
+  font-family: "IRANSanWeb";
+  src: url("fonts/woff2/IRANSansWeb.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* فونت بولد */
+@font-face {
+  font-family: "IRANSanWeb";
+  src: url("fonts/woff2/IRANSansWeb_Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* استفاده از فونت در سرتاسر صفحه */
+body {
+  font-family: "IRANSanWeb", sans-serif;
+}
+
+/* برای بخش‌های بولد از این استفاده کن */
+h1,
+h2,
+h3,
+.bold-text {
+  font-weight: bold;
+  font-family: "IRANSanWeb", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-family: "IRANSanWeb", sans-serif;
+}
+span {
+  font-family: "IRANSanWeb", sans-serif;
+}
